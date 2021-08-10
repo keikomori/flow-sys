@@ -12,3 +12,17 @@ Por ser a água um recurso híbrido limitado, o uso sustentável da água nos gr
 |1883           |MQTT           |
 |3003           |Telegraf       |
 |3000           |Grafana        |
+
+----------
+
+#### 	:desktop_computer: [MQTT + Telegrad + InfluxDB + Grafana](https://github.com/keikomori/flow-sys) 
+
+----------
+
+#### 	:computer: [Hardware ESP32 + Sensor de Fluxo](https://github.com/keikomori/flow-sys)
+
+----------
+
+#### 	:computer: [Flow API](https://github.com/keikomori/flow-sys)
+
+----------
