@@ -6,15 +6,6 @@ Por ser a água um recurso híbrido limitado, o uso sustentável da água nos gr
 
 <img align="center" src="https://github.com/keikomori/flow-sys/blob/master/images/overview.png" alt="alt text" width="900"/>
 
-<h4>Mapeamento das portas:</h4>
-
-|HOST           |SERVICE        |
-|---------------|---------------|
-|8086           |InfluxDB       |
-|1883           |MQTT           |
-|3003           |Telegraf       |
-|3000           |Grafana        |
-
 ----------
 
 #### 	:desktop_computer: [MQTT + Telegrad + InfluxDB + Grafana](https://github.com/keikomori/flow-sys) 
@@ -28,3 +19,5 @@ Por ser a água um recurso híbrido limitado, o uso sustentável da água nos gr
 #### 	:computer: [Flow API](https://github.com/keikomori/flow-sys)
 
 ----------
+
+
