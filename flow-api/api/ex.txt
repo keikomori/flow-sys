@@ -1,0 +1,48 @@
+
+
+
+
+
+const Influx = require('influx')
+
+// Connect to a single host with a full set of config details and
+// a custom schema
+const client = new Influx.InfluxDB({
+  database: 'my_db',
+  host: 'localhost',
+  port: 8086,
+  username: 'telegraf',
+  password: 'password',
+  schema: [
+    {
+      measurement: 'mqtt_consumer',
+      fields: {
+        time: Influx.FieldType.STRING,
+        consumer: Influx.FieldType.STRING,
+        topic: Influx.FieldType.STRING,
+        unity: Influx.FieldType.STRING
+      },
+      tags: [
+        'hostname'
+      ]
+    }
+  ]
+})
+
+app.get("/consumer", function (req, res) {
+    influx
+      .query(
+        `
+      select * from mqtt_consumer
+      where host = ${Influx.escape.stringLit(os.hostname())}
+      order by time desc
+      limit 10
+    `
+      )
+      .then((result) => {
+        res.json(result);
+      })
+      .catch((err) => {
+        res.status(500).send(err.stack);
+      });
+  });
