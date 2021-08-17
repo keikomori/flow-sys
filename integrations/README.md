@@ -25,7 +25,7 @@ No desenvolvimento deste projeto foram utilizadas as seguintes portas para a con
 
 <h4>Configuração</h4>
 
-Após a instalação das ferramentas é necessário que utilize os arquivos didsponibilizados nesta seção.
+Após a instalação das ferramentas é necessário que utilize os arquivos disponibilizados nesta seção.
 
 
 <h4>Referências</h4>
