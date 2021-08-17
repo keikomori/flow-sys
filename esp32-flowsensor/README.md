@@ -2,9 +2,7 @@
 <h1 align="center"> Sistema de Sensoriamento de água </h1>
 <h6 align="center">by Keiko</h6>
 
-<h4>Montagem do circuito</h4>
-
-
+Para a execução deste projeto é necessário que utilize a versão 4.2.2 do ESP-IDF.
 
 <h3>Referências</h3>
 
