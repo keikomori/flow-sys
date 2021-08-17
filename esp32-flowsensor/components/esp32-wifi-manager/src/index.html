@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script async src="code.js"></script>
+		<title>Flow Monitor</title>
+	</head>
+	<body>
+		<div class="card">
+		<div class="login">
+			<h1>Monitor Hídrico</h1>
+			<form method="post" action="">
+			  <p><input type="text" name="login" value="" placeholder="Username or Email" style="width: 100%;border-radius: 5px;background-color:#ddd;"></p>
+			  <p><input type="password" name="password" value="" placeholder="Password" style="width: 100%;border-radius: 5px;background-color:#ddd;"></p>
+			  <p class="submit"><input type="submit" name="commit" value="Login" style="width: 100%;border-radius: 5px;"></p>
+			</form>
+		  </div>
+		<div id="app">
+			<div id="app-wrap">
+				<div id="wifi">
+					<header>
+						<h1>Wi-Fi</h1>
+					</header>
+					<div id="wifi-status">
+						<h2>Conecte:</h2>
+						<section id="connected-to">
+							<div class="ape"><div class="w0"><div class="pw"><span></span></div></div></div>
+						</section>
+					</div>
+					<h2>Conexão manual</h2>
+					<section id="manual_add">
+					<div class="ape">ADD (HIDDEN) SSID<div>
+					</section>
+					<h2>ou escolha uma rede...</h2>
+					<section id="wifi-list">
+					</section>
+				</div>
+				<div id="connect_manual">
+					<header>
+						<h1>Wi-Fi</h1>
+					</header>
+					<h2>Conexão Manual</span></h2>
+					<section>
+						<input id="manual_ssid" type="text" placeholder="SSID" value="">
+						<input id="manual_pwd" type="password" placeholder="Password" value="">
+					</section>
+					<div class="buttons">
+							<input id="manual_join" type="button" value="Conectar" data-connect="manual" />
+							<input id="manual_cancel" type="button" value="Cancel"/>
+					</div>
+				</div>
+				<div id="connect">
+					<header>
+						<h1>Insira a senha</h1>
+					</header>
+					<h2>Senha <span id="ssid-pwd"></span></h2>
+					<section>
+						<input id="pwd" type="password" placeholder="Password" value="">
+					</section>
+					<div class="buttons">
+							<input id="join" type="button" value="Conectar" />
+							<input id="cancel" type="button" value="Cancel"/>
+					</div>
+				</div>
+				<div id="connect-wait">
+					<header>
+						<h1>Aguarde...</h1>
+					</header>
+					<h2>Conectando a <span id="ssid-wait"></span></h2>
+					<section>
+						<div id="loading">
+							<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+							<p class="tctr">Você pode perder o acesso wi-fi enquanto o esp32 recalibra. Aguarde até que seu dispositivo se reconecte automaticamente. Isso pode levar até 30 segundos.</p>
+						</div>
+						<div id="connect-success">
+							<h3 class="gr">Success!</h3>
+						</div>
+						<div id="connect-fail">
+							<h3 class="rd">Falha na conexão</h3>
+							<p class="tctr">Verifique se a senha está correta, ou certifique-se de que o sinal está bom.</p>
+						</div>
+					</section>
+					<div class="buttons">
+						<input id="ok-connect" type="button" value="OK" class="ctr" />
+					</div>
+				</div>
+				<div id="connect-details">
+					<div id="connect-details-wrap">
+						<header>
+							<h1></h1>
+						</header>
+						<h2></h2>
+						<section>
+							<div class="buttons">
+								<input id="disconnect" type="button" value="Deconectar" class="ctr"/>
+							</div>
+						</section>
+						<h2>IP Address</h2>
+						<section>
+							<div class="ape brdb">IP Address:<div id="ip" class="fr"></div></div>
+							<div class="ape brdb">Subnet Mask:<div id="netmask" class="fr"></div></div>
+							<div class="ape">Default Gateway:<div id="gw" class="fr"></div></div>
+						</section>
+						<div class="buttons">
+							<input id="ok-details" type="button" value="OK" class="ctr" />
+						</div>
+					</div>					
+					<div id="diag-disconnect" class="diag-box">
+						<div class="diag-box-win">
+							<p>Você tem certeza de que deseja se desconectar do Wifi?</p>
+							<div class="buttons">
+								<input id="no-disconnect" type="button" value="Não" />
+								<input id="yes-disconnect" type="button" value="Sim" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+<html>
