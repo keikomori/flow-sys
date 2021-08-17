@@ -6,7 +6,8 @@
 
 Para realizar a integração com sistemas de gerenciamento condominial utilizamos uma API desenvolvida em node js que faz a requisição das consultas definidas.
 
-<h3> INSTALAÇÃO (é necessário ter instalado o nodejs em sua máquina)</h3>
+<h3> INSTALAÇÃO </h3>
+<h6>É necessário ter instalado o nodejs em sua máquina</h6>
 
 Clone o projeto:
 
