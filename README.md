@@ -31,5 +31,8 @@ https://youtu.be/MXa5vgluvZ8
 
 ----------
 
-<h3> Licensa </h3>
+<h3> Copyright </h3>
+
+[Licensa](https://github.com/keikomori/flow-sys/blob/master/LICENSE)
+
 
