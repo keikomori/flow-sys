@@ -4,3 +4,14 @@
 
 <h4>Montagem do circuito</h4>
 
+
+
+<h3>Referências</h3>
+
+https://github.com/espressif/esp-idf
+
+https://github.com/tonyp7/esp32-wifi-manager
+
+https://github.com/tuanpmt/esp_mqtt
+
+https://github.com/espressif/esp-mqtt
